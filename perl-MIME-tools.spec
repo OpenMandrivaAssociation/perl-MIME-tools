@@ -10,7 +10,7 @@ Summary:	Perl modules for parsing (and creating!) MIME entities
 License:	GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://search.cpan.org/CPAN/authors/id/D/DS/DSKOLL/%{module}-%{version}.tar.bz2
+Source:		http://www.cpan.org/modules/by-module/MIME/%{module}-%{version}.tar.gz
 Requires:	perl-IO-stringy >= 1.211
 Requires:	perl-MailTools >= 1.15
 Requires:	perl(MIME::Base64) >= 3.03
