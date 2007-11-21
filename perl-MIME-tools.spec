@@ -14,10 +14,10 @@ Source:		http://www.cpan.org/modules/by-module/MIME/%{module}-%{version}.tar.gz
 Requires:	perl-IO-stringy >= 1.211
 Requires:	perl-MailTools >= 1.15
 Requires:	perl(MIME::Base64) >= 3.03
-BuildRequires:	perl-devel
 BuildRequires:	perl-IO-stringy >= 1.211
 BuildRequires:	perl-MailTools >= 1.15
 BuildRequires:	perl(MIME::Base64) >= 3.03
+BuildRequires:	perl(File::Temp) >= 0.17
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
@@ -42,7 +42,6 @@ rm -f set-version.pl
 %install
 rm -rf %{buildroot}
 %makeinstall_std 
-%{__chmod} 0644 %{buildroot}%{_mandir}/*/*
 
 %clean
 rm -rf %{buildroot}
@@ -52,4 +51,3 @@ rm -rf %{buildroot}
 %doc README COPYING ChangeLog
 %{perl_vendorlib}/MIME
 %{_mandir}/*/*
-
