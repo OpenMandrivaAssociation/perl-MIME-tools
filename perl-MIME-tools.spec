@@ -1,7 +1,7 @@
 %define module	MIME-tools
 %define name	perl-%{module}
 %define version	5.425
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -14,6 +14,7 @@ Source:		http://www.cpan.org/modules/by-module/MIME/%{module}-%{version}.tar.gz
 Requires:	perl-IO-stringy >= 1.211
 Requires:	perl-MailTools >= 1.15
 Requires:	perl(MIME::Base64) >= 3.03
+Requires:   perl(File::Temp) >= 0.17
 BuildRequires:	perl-IO-stringy >= 1.211
 BuildRequires:	perl-MailTools >= 1.15
 BuildRequires:	perl(MIME::Base64) >= 3.03
