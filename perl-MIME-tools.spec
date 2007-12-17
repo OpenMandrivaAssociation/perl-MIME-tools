@@ -20,7 +20,6 @@ BuildRequires:	perl-MailTools >= 1.15
 BuildRequires:	perl(MIME::Base64) >= 3.03
 BuildRequires:	perl(File::Temp) >= 0.17
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 MIME-tools - modules for parsing (and creating!) MIME entities Modules in this
