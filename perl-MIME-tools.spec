@@ -1,9 +1,9 @@
 %define upstream_name	 MIME-tools
-%define upstream_version 5.428
+%define upstream_version 5.502
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Perl modules for parsing (and creating!) MIME entities
 License:	GPL
