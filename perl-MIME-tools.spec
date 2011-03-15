@@ -4,25 +4,22 @@
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
-
 Summary:	Perl modules for parsing (and creating!) MIME entities
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/MIME/%{upstream_name}-%{upstream_version}.tar.gz
-
 BuildRequires:	perl(File::Temp)   >= 0.17
 BuildRequires:	perl(IO::Stringy)  >= 1.211
 BuildRequires:	perl(Mail::Util)   >= 1.15
 BuildRequires:	perl(MIME::Base64) >= 3.03
-
-BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
-
+BuildRequires:	perl(Test::Deep)
 Requires:   perl(File::Temp)   >= 0.17
 Requires:	perl(IO::Stringy)  >= 1.211
 Requires:	perl(MIME::Base64) >= 3.03
 Requires:	perl(Mail::Util)   >= 1.15
+BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 MIME-tools - modules for parsing (and creating!) MIME entities Modules in this
