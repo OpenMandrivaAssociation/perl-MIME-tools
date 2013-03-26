@@ -1,9 +1,9 @@
-%define upstream_name	 MIME-tools
+%define upstream_name MIME-tools
 %define upstream_version 5.502
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 4
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	5
 Summary:	Perl modules for parsing (and creating!) MIME entities
 License:	GPL
 Group:		Development/Perl
@@ -15,12 +15,11 @@ BuildRequires:	perl(Mail::Util)   >= 1.15
 BuildRequires:	perl(MIME::Base64) >= 3.03
 BuildRequires:	perl(Test::Deep)
 BuildRequires:	perl-devel
-Requires:   perl(File::Temp)   >= 0.17
+Requires:	perl(File::Temp)   >= 0.17
 Requires:	perl(IO::Stringy)  >= 1.211
 Requires:	perl(MIME::Base64) >= 3.03
 Requires:	perl(Mail::Util)   >= 1.15
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 MIME-tools - modules for parsing (and creating!) MIME entities Modules in this
@@ -41,14 +40,9 @@ rm -f set-version.pl
 %make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std 
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc README COPYING ChangeLog
 %{perl_vendorlib}/MIME
 %{_mandir}/*/*
@@ -68,11 +62,11 @@ rm -rf %{buildroot}
 + Revision: 644906
 - update to new version 5.502
 
-* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 5.428.0-2mdv2011.0
+* Tue Jul 20 2010 Jerome Quelin <jquelin@mandriva.org> 5.428.0-2mdv2011.0
 + Revision: 555303
 - rebuild
 
-* Fri Apr 23 2010 Jérôme Quelin <jquelin@mandriva.org> 5.428.0-1mdv2010.1
+* Fri Apr 23 2010 Jerome Quelin <jquelin@mandriva.org> 5.428.0-1mdv2010.1
 + Revision: 538299
 - update to 5.428
 
@@ -134,7 +128,7 @@ rm -rf %{buildroot}
 - own dir
 - rebuild
 
-* Wed Aug 13 2003 Per �yvind Karlsen <peroyvind@linux-mandrake.com> 5.411-6mdk
+* Wed Aug 13 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 5.411-6mdk
 - rebuild against new perl
 - drop Prefix tag
 - drop $RPM_OPT_FLAGS, noarch..
