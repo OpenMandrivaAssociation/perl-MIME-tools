@@ -1,10 +1,10 @@
 %define modname	MIME-tools
-%define modver	5.502
+%define modver	5.509
 
 Summary:	Perl modules for parsing (and creating!) MIME entities
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	15
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
