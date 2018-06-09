@@ -16,6 +16,7 @@ BuildRequires:	perl(Mail::Util)   >= 1.15
 BuildRequires:	perl(MIME::Base64) >= 3.03
 BuildRequires:	perl(Test::Deep)
 BuildRequires:	perl-devel
+BuildRequires:	perl(Test::More)
 Requires:	perl(File::Temp)   >= 0.17
 Requires:	perl(IO::Stringy)  >= 1.211
 Requires:	perl(MIME::Base64) >= 3.03
