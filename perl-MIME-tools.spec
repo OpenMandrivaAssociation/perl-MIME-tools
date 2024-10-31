@@ -4,7 +4,7 @@
 Summary:	Perl modules for parsing (and creating!) MIME entities
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	4
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
