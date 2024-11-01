@@ -9,17 +9,17 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/MIME::Tools
 Source0:	https://cpan.metacpan.org/authors/id/D/DS/DSKOLL/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	perl(File::Temp)   >= 0.17
-BuildRequires:	perl(IO::Stringy)  >= 1.211
-BuildRequires:	perl(Mail::Util)   >= 1.15
-BuildRequires:	perl(MIME::Base64) >= 3.03
+BuildRequires:	perl(File::Temp)
+BuildRequires:	perl(IO::Stringy)
+BuildRequires:	perl(Mail::Util)
+BuildRequires:	perl(MIME::Base64)
 BuildRequires:	perl(Test::Deep)
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
-Requires:	perl(File::Temp)   >= 0.17
-Requires:	perl(IO::Stringy)  >= 1.211
-Requires:	perl(MIME::Base64) >= 3.03
-Requires:	perl(Mail::Util)   >= 1.15
+Requires:	perl(File::Temp)
+Requires:	perl(IO::Stringy)
+Requires:	perl(MIME::Base64)
+Requires:	perl(Mail::Util)
 
 %description
 MIME-tools - modules for parsing (and creating!) MIME entities Modules in this
