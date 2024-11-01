@@ -1,14 +1,13 @@
 %define modname	MIME-tools
-%define modver	5.509
 
 Summary:	Perl modules for parsing (and creating!) MIME entities
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	4
+Version:	5.515
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/MIME/%{modname}-%{modver}.tar.gz
+Url:		https://metacpan.org/pod/MIME::Tools
+Source0:	https://cpan.metacpan.org/authors/id/D/DS/DSKOLL/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(File::Temp)   >= 0.17
 BuildRequires:	perl(IO::Stringy)  >= 1.211
@@ -30,21 +29,20 @@ subclasses for parsing fields, a parsed MIME header (Mail::Header subclass),
 parser and tool for building your own MIME parser, and utilities.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 rm -f set-version.pl
 %__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
-%make test
+%make_build test
 
 %install
-%makeinstall_std 
+%make_install
 
 %files
 %doc README COPYING ChangeLog
 %{perl_vendorlib}/MIME
 %{_mandir}/man3/*
-
