@@ -9,6 +9,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/MIME::Tools
 Source0:	https://cpan.metacpan.org/authors/id/D/DS/DSKOLL/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(File::Temp)
 BuildRequires:	perl(IO::Stringy)
 BuildRequires:	perl(Mail::Util)
