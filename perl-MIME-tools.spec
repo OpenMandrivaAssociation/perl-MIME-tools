@@ -2,7 +2,7 @@
 
 Summary:	Perl modules for parsing (and creating!) MIME entities
 Name:		perl-%{modname}
-Version:	5.515
+Version:	5.517
 Release:	1
 License:	GPLv2
 Group:		Development/Perl
@@ -30,7 +30,7 @@ subclasses for parsing fields, a parsed MIME header (Mail::Header subclass),
 parser and tool for building your own MIME parser, and utilities.
 
 %prep
-%autosetup -p1 -n %{modname}-%{version}
+%autosetup -p1 -n MIME-tools-5.517
 
 %build
 rm -f set-version.pl
