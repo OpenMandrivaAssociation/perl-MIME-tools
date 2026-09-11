@@ -30,7 +30,7 @@ subclasses for parsing fields, a parsed MIME header (Mail::Header subclass),
 parser and tool for building your own MIME parser, and utilities.
 
 %prep
-%autosetup -p1 -n MIME-tools-5.517
+%autosetup -p1 -n MIME-tools-%{version}
 
 %build
 rm -f set-version.pl
