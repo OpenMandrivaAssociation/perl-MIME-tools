@@ -2,7 +2,7 @@
 
 Summary:	Perl modules for parsing (and creating!) MIME entities
 Name:		perl-%{modname}
-Version:	5.518
+Version:	5.519
 Release:	1
 License:	GPLv2
 Group:		Development/Perl
